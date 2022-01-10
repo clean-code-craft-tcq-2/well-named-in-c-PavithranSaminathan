@@ -1,9 +1,5 @@
 #include "TestColorsPair.h"
 
-NumberOfMajorColors_i = sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-NumberOfMinorColors_i = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-
-
 void PrintAllPairs()
 {
     int LPairNumber;
