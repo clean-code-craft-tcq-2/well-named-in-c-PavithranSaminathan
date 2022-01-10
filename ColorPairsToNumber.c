@@ -1,4 +1,4 @@
-#include "TestColorPairs.h"
+#include "TestColorsPair.h"
 #include <assert.h>
 
 static int GetPairNumberFromColor(const ColorPair* colorPair) 
