@@ -2,7 +2,7 @@
 #define TestColorsPair_H
 
 #include <stdio.h>
-#include "TestColorsPair_cf.h"
+#include "TestColorsPair_cfg.h"
 
 int NumberOfMajorColors_i;
 int NumberOfMinorColors_i;
