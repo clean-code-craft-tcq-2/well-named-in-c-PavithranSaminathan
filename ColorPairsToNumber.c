@@ -5,7 +5,7 @@ NumberOfMinorColors_i = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 static int GetPairNumberFromColor(const ColorPair* colorPair) 
 {
-    return colorPair->majorColor * numberOfMinorColors +
+    return colorPair->majorColor * NumberOfMinorColors_i +
             colorPair->minorColor + 1;
 }
 
