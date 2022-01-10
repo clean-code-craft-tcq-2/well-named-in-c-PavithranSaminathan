@@ -9,9 +9,9 @@ static ColorPair GetColorFromPairNumber(int pairNumber)
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
     colorPair.majorColor = 
-        (enum MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
+        (enum MajorColor)(zeroBasedPairNumber / NumberOfMinorColors_i);
     colorPair.minorColor =
-        (enum MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
+        (enum MinorColor)(zeroBasedPairNumber % NumberOfMinorColors_i);
     return colorPair;
 }
 
