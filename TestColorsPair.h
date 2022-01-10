@@ -1,5 +1,5 @@
-#ifndef ColorPair_H
-#define ColorPair_H
+#ifndef TestColorsPair_H
+#define TestColorsPair_H
 
 #include <stdio.h>
 #include "TestColorsPair_cf.h"
