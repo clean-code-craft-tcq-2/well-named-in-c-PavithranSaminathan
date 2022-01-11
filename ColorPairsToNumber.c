@@ -9,12 +9,7 @@
 /*------------------------------------------------------------------------------
  *  FUNCTION:   static int GetPairNumberFromColor(const ColorPair* colorPair) 
  */
-/*! \brief      To read pair number from configured paired colors
- *
- * \param       const colorPair*
- * \return      int
- *
-*/
+/*! \brief      To read pair number from configured paired colors */
 static int GetPairNumberFromColor(const ColorPair* colorPair) 
 {
     return colorPair->majorColor * NumberOfMinorColors_i +
@@ -24,12 +19,8 @@ static int GetPairNumberFromColor(const ColorPair* colorPair)
 /*------------------------------------------------------------------------------
  *  FUNCTION:   TestPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber)
  */
-/*! \brief      To execute test between real and expected pair number
- *
- * \param       enum, enum, int
- * \return      int
- *
-*/
+/*! \brief      To execute test between real and expected pair number */
+
 void TestPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber)
 {
     ColorPair colorPair;
