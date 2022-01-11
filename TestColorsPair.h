@@ -2,22 +2,22 @@
 #define TestColorsPair_H
 
 #include <stdio.h>
-#include "TestColorsPair_cfg.h"
 
 #define MAX_PAIR    16U
+const int MAX_COLORPAIR_NAME_CHARS = 16;
 
 typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
 
+const char* MajorColorNames[] = {
+    "White", "Red", "Black", "Yellow", "Violet"
+};
 
-
-const int MAX_COLORPAIR_NAME_CHARS =16U;
-
-const char* MajorColorNames[];
-
-const char* MinorColorNames[];
+const char* MinorColorNames[] = {
+    "Blue", "Orange", "Green", "Brown", "Slate"
+};
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET };
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE };
