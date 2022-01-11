@@ -10,8 +10,8 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 
-int NumberOfMajorColors_i;
-int NumberOfMinorColors_i;
+extern int NumberOfMajorColors_i;
+extern int NumberOfMinorColors_i;
 
 extern void TestPairToNumber(enum MajorColor major,enum MinorColor minor,
                                                    int expectedPairNumber);
