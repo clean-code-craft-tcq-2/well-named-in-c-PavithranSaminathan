@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include "TestColorsPair_cfg.h"
 
-int NumberOfMajorColors_i;
-int NumberOfMinorColors_i;
+extern int NumberOfMajorColors_i;
+extern int NumberOfMinorColors_i;
 
 typedef struct {
     enum MajorColor majorColor;
