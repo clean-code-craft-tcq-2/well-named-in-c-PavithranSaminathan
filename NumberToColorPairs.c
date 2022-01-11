@@ -7,6 +7,16 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer)
                             MinorColorNames[colorPair->minorColor]);
 }
 
+ColorPair GetColorFromPairNumber(int pairNumber) 
+{
+    ColorPair colorPair;
+    int zeroBasedPairNumber = pairNumber - 1;
+    colorPair.majorColor = 
+        (enum MajorColor)(zeroBasedPairNumber / NumberOfMinorColors_i);
+    colorPair.minorColor =
+        (enum MinorColor)(zeroBasedPairNumber % NumberOfMinorColors_i);
+    return colorPair;
+}
 
 void TestNumberToPair(int pairNumber, enum MajorColor expectedMajor,
                                       enum MinorColor expectedMinor)
