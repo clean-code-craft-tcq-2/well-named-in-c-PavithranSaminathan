@@ -7,9 +7,9 @@ void PrintAllPairs()
 {
     int LPairNumber;
     ColorPair LColorPair;
-    for (LPairNumber=0;(int)MAX_PAIR > LPairNumber;LPairNumber++)
+    for (LPairNumber=1;(int)MAX_PAIR >= LPairNumber;LPairNumber++)
     {
-        sprintf("\n %d",LPairNumber);
+        printf("\n %d",LPairNumber);
         LColorPair = GetColorFromPairNumber(LPairNumber);
         ColorPairToString(&colorPair, colorPairNames);
     }
