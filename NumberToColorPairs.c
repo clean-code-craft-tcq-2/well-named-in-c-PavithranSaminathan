@@ -1,5 +1,5 @@
-#include "TestColorsPair.h"
-#include <assert.h>
+//#include "TestColorsPair.h"
+//#include <assert.h>
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) 
 {
