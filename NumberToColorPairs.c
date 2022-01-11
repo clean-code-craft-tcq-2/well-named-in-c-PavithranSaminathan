@@ -1,8 +1,6 @@
 #include "TestColorsPair.h"
 #include <assert.h>
 
-NumberOfMajorColors_i = sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-
 static ColorPair GetColorFromPairNumber(int pairNumber) 
 {
     ColorPair colorPair;
