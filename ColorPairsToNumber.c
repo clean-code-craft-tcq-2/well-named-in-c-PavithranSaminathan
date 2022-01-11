@@ -1,7 +1,7 @@
 #include "TestColorsPair.h"
 #include <assert.h>
 
-NumberOfMinorColors_i = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
+//NumberOfMinorColors_i = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 static int GetPairNumberFromColor(const ColorPair* colorPair) 
 {
