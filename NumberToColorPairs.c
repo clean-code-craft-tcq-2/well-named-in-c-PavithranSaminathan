@@ -1,17 +1,6 @@
 #include "TestColorsPair.h"
 #include <assert.h>
 
-static ColorPair GetColorFromPairNumber(int pairNumber) 
-{
-    ColorPair colorPair;
-    int zeroBasedPairNumber = pairNumber - 1;
-    colorPair.majorColor = 
-        (enum MajorColor)(zeroBasedPairNumber / NumberOfMinorColors_i);
-    colorPair.minorColor =
-        (enum MinorColor)(zeroBasedPairNumber % NumberOfMinorColors_i);
-    return colorPair;
-}
-
 static void ColorPairToString(const ColorPair* colorPair, char* buffer) 
 {
     sprintf(buffer, "%s %s",MajorColorNames[colorPair->majorColor],
