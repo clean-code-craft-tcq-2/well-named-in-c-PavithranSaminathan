@@ -20,5 +20,5 @@ extern void TestNumberToPair(int pairNumber, enum MajorColor expectedMajor,
                                              enum MinorColor expectedMinor);
 extern ColorPair GetColorFromPairNumber(int LPairNumber);
 
-void ColorPairToString(const ColorPair* colorPair, char* buffer);
+extern void ColorPairToString(const ColorPair* colorPair, char* buffer);
 #endif
