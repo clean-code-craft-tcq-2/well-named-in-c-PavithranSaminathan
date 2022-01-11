@@ -7,7 +7,7 @@
 /*------------------------------------------------------------------------------
  *  FUNCTION:   void PrintAllPairs()
  */
-/*! \brief      To print all color pairs 
+/*! \brief      Print all color pairs against pair number
  *
  * \param       void
  * \return      void
@@ -18,6 +18,7 @@ void PrintAllPairs()
     int LPairNumber;
     ColorPair LColorPair;
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+    printf("user manual color pairs");
     for (LPairNumber=1;(int)MAX_PAIR >= LPairNumber;LPairNumber++)
     {
         printf("\n %d",LPairNumber);
@@ -32,7 +33,7 @@ void PrintAllPairs()
 /*! \brief      Main fnction to call all test cases and print color pairs
  *
  * \param       void
- * \return      0
+ * \return      int
  *
 */
 int main() {
