@@ -14,7 +14,7 @@ int NumberOfMinorColors_i = sizeof(MinorColorNames) / sizeof(MinorColorNames[0])
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) 
 {
-    printf("checking %d %d",colorPair->majorColor,colorPair);
+    printf("checking %d %d",colorPair->majorColor,colorPair->minorColor);
     sprintf(buffer, "%s %s",MajorColorNames[colorPair->majorColor],
                             MinorColorNames[colorPair->minorColor]);
 }
