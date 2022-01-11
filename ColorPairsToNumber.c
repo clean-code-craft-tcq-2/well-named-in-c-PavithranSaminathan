@@ -1,14 +1,35 @@
+/*!
+ * \file         ColorPairsToNumber.c
+ * \brief        This file contains functions definition to test Pair number to color 
+ */
+
 #include "TestColorsPair.h"
 #include <assert.h>
 
-//NumberOfMinorColors_i = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-
+/*------------------------------------------------------------------------------
+ *  FUNCTION:   static int GetPairNumberFromColor(const ColorPair* colorPair) 
+ */
+/*! \brief      To read pair number from configured paired colors
+ *
+ * \param       const colorPair*
+ * \return      int
+ *
+*/
 static int GetPairNumberFromColor(const ColorPair* colorPair) 
 {
     return colorPair->majorColor * NumberOfMinorColors_i +
             colorPair->minorColor + 1;
 }
 
+/*------------------------------------------------------------------------------
+ *  FUNCTION:   TestPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber)
+ */
+/*! \brief      To execute test between real and expected pair number
+ *
+ * \param       enum, enum, int
+ * \return      int
+ *
+*/
 void TestPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber)
 {
     ColorPair colorPair;
