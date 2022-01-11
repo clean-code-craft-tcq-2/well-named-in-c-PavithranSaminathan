@@ -7,12 +7,7 @@
 /*------------------------------------------------------------------------------
  *  FUNCTION:   void PrintAllPairs()
  */
-/*! \brief      Print all color pairs against pair number
- *
- * \param       void
- * \return      void
- *
-*/
+/*! \brief      Print all color pairs against pair number */
 void PrintAllPairs()
 {
     int LPairNumber;
@@ -30,12 +25,7 @@ void PrintAllPairs()
 /*------------------------------------------------------------------------------
  *  FUNCTION:   int main()
  */
-/*! \brief      Main fnction to call all test cases and print color pairs
- *
- * \param       void
- * \return      int
- *
-*/
+/*! \brief      Main fnction to call all test cases and print color pairs */
 int main() {
     TestNumberToPair(4, WHITE, BROWN);
     TestNumberToPair(5, WHITE, SLATE);
