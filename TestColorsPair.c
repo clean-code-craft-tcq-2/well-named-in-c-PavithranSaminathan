@@ -10,6 +10,7 @@ void PrintAllPairs()
         printf("\n %d",LPairNumber);
         LColorPair = GetColorFromPairNumber(LPairNumber);
         ColorPairToString(&LColorPair, colorPairNames);
+        printf("%s",colorPairNames);
     }
 }
 
