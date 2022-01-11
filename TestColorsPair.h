@@ -4,14 +4,14 @@
 #include <stdio.h>
 #include "TestColorsPair_cfg.h"
 
-extern int NumberOfMajorColors_i;
-extern int NumberOfMinorColors_i;
 
 typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
 
+extern int NumberOfMajorColors_i;
+extern int NumberOfMinorColors_i;
 
 extern void TestPairToNumber(enum MajorColor major,enum MinorColor minor,
                                                    int expectedPairNumber);
