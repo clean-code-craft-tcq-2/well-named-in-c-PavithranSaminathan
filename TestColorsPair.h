@@ -18,5 +18,5 @@ extern void TestPairToNumber(enum MajorColor major,enum MinorColor minor,
 
 extern void TestNumberToPair(int pairNumber, enum MajorColor expectedMajor,
                                              enum MinorColor expectedMinor);
-extern ColorPair GetColorFromPairNumber(LPairNumber);
+extern ColorPair GetColorFromPairNumber(int LPairNumber);
 #endif
