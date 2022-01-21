@@ -41,4 +41,5 @@ extern void TestNumberToPair(int pairNumber, enum MajorColor expectedMajor,
 extern ColorPair GetColorFromPairNumber(int LPairNumber);
 extern void ColorPairToString(const ColorPair* colorPair, char* buffer);
 extern void PrintAllPairs();
+extern int GetPairNumberFromColor(const ColorPair* colorPair); 
 #endif
