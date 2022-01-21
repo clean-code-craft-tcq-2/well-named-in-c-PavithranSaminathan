@@ -1,5 +1,5 @@
 /*!
- * \file         TestNumberToColorPairs.c
+ * \file         TestPairs.c
  * \brief        This file contains functions definition to test color pair against pair number
  */
 #include "TestColorsPair.h"
