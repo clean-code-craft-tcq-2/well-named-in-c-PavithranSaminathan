@@ -9,7 +9,7 @@
  *  FUNCTION:   static int GetPairNumberFromColor(const ColorPair* colorPair) 
  */
 /*! \brief      To read pair number from configured paired colors */
-static int GetPairNumberFromColor(const ColorPair* colorPair) 
+int GetPairNumberFromColor(const ColorPair* colorPair) 
 {
     return colorPair->majorColor * NumberOfMinorColors_i +
             colorPair->minorColor + 1;
