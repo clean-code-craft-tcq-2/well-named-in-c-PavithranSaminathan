@@ -19,3 +19,19 @@ void TestNumberToPair(int pairNumber, enum MajorColor expectedMajor,enum MinorCo
     assert(LcolorPair.majorColor == expectedMajor);
     assert(LcolorPair.minorColor == expectedMinor);
 }
+
+
+/*------------------------------------------------------------------------------
+ *  FUNCTION:   TestPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber)
+ */
+/*! \brief      To execute test between real and expected pair number */
+
+void TestPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber)
+{
+    ColorPair colorPair;
+    colorPair.majorColor = major;
+    colorPair.minorColor = minor;
+    int pairNumber = GetPairNumberFromColor(&colorPair);
+    printf("Got pair number %d\n", pairNumber);
+    assert(pairNumber == expectedPairNumber);
+}
