@@ -10,8 +10,8 @@ void Test_Number_To_ColorPair(int APairNumber , ColorPair AColorPair)
     const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     
-    assert(AColorPair.majorColor == MajorColorNames[APairNumber/5]);
-    assert(AColorPair.minorColor == MinorColorNames[APairNumber%5]);
+    assert(strcmp(AColorPair.majorColor, MajorColorNames[APairNumber/5]) );
+    assert(strcmp(AColorPair.minorColor ,MinorColorNames[APairNumber%5]) );
 }
            
            
