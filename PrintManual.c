@@ -10,8 +10,8 @@ void Test_Number_To_ColorPair(int PairNumber , ColorPair AColorPair)
     const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     
-    assert(AColorPair.MajorColor == MajorColorNames[(PairNumber-1)/5]);
-    assert(AColorPair.MajorColor == MajorColorNames[(PairNumber-1)%5]);
+    assert(AColorPair.MajorColor == MajorColorNames[APairNumber/5]);
+    assert(AColorPair.MinorColor == MinorColorNames[APairNumber%5]);
 }
            
            
@@ -32,7 +32,7 @@ void PrintAllPairs()
         ColorPairToString(&LColorPair, colorPairNames);
         
         //This function will test each pair againt pair number befor print on console
-        Test_Number_To_ColorPair(LPairNumber,&LColorPair);
+        Test_Number_To_ColorPair((LPairNumber-1),&LColorPair);
         
         printf(" %s",colorPairNames);
     }
