@@ -18,6 +18,16 @@ void PrintAllPairs()
         printf("\n %d",LPairNumber);
         LColorPair = GetColorFromPairNumber(LPairNumber);
         ColorPairToString(&LColorPair, colorPairNames);
+        
+        //This function will test each pair againt pair number befor print on console
+        Test_Number_To_ColorPair(LPairNumber,&LColorPair);
+        
         printf(" %s",colorPairNames);
     }
 }
+
+void Test_Number_To_ColorPair(int PairNumber , ColorPair AColorPair)
+{
+    
+}
+
