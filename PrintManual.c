@@ -4,6 +4,17 @@
 #include "TestColorsPair.h"
 #include <assert.h>
 
+
+void Test_Number_To_ColorPair(int PairNumber , ColorPair AColorPair)
+{
+    const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
+    const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+    
+    assert(AColorPair.MajorColor == MajorColorNames[(PairNumber-1)/5];
+    assert(AColorPair.MajorColor == MajorColorNames[(PairNumber-1)%5];
+}
+           
+           
 /*------------------------------------------------------------------------------
  *  FUNCTION:   void PrintAllPairs()
  */
@@ -27,12 +38,4 @@ void PrintAllPairs()
     }
 }
 
-void Test_Number_To_ColorPair(int PairNumber , ColorPair AColorPair)
-{
-    const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
-    const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    
-    assert(AColorPair.MajorColor == MajorColorNames[(PairNumber-1)/5];
-    assert(AColorPair.MajorColor == MajorColorNames[(PairNumber-1)%5];
-}
 
