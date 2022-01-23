@@ -2,6 +2,7 @@
 * Header Includes 
 */
 #include "TestColorsPair.h"
+#include <assert.h>
 
 /*------------------------------------------------------------------------------
  *  FUNCTION:   void PrintAllPairs()
