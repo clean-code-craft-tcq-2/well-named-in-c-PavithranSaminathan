@@ -5,7 +5,7 @@
 #include <assert.h>
 
 
-void Test_Number_To_ColorPair(int PairNumber , ColorPair AColorPair)
+void Test_Number_To_ColorPair(int APairNumber , ColorPair AColorPair)
 {
     const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
