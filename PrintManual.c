@@ -11,8 +11,8 @@ void Test_Number_To_ColorPair(int APairNumber , const ColorPair* AColorPair)
     const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     printf("TEST =  %s %s    ",MajorColorNames[AColorPair->majorColor],MajorColorNames[APairNumber/5] );
      printf("TEST =  %s %s\n",MinorColorNames[AColorPair->minorColor],MinorColorNames[APairNumber%5] );
-    //assert(strcmp(MajorColorNames[AColorPair->majorColor], MajorColorNames[APairNumber/5]) );
-    //assert(strcmp(MinorColorNames[AColorPair->minorColor] ,MinorColorNames[APairNumber%5]) );
+    assert(MajorColorNames[AColorPair->majorColor] == MajorColorNames[APairNumber/5] );
+    assert(MinorColorNames[AColorPair->minorColor] == MinorColorNames[APairNumber%5] );
    
 }
            
@@ -31,10 +31,12 @@ void PrintAllPairs()
     {
         printf("\n %d",LPairNumber);
         LColorPair = GetColorFromPairNumber(LPairNumber);
-        ColorPairToString(&LColorPair, colorPairNames);
-        
-        //This function will test each pair againt pair number befor print on console
+          
+        /* This assert function will check each pair color against pair number before print on console */
         Test_Number_To_ColorPair((LPairNumber-1),&LColorPair);
+        
+        /* Print User manual */
+        ColorPairToString(&LColorPair, colorPairNames);
         
         printf(" %s",colorPairNames);
     }
