@@ -9,8 +9,7 @@ void Test_Number_To_ColorPair(int APairNumber , const ColorPair* AColorPair)
 {
     const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    printf("TEST =  %s %s    ",MajorColorNames[AColorPair->majorColor],MajorColorNames[APairNumber/5] );
-     printf("TEST =  %s %s\n",MinorColorNames[AColorPair->minorColor],MinorColorNames[APairNumber%5] );
+    
     assert(MajorColorNames[AColorPair->majorColor] == MajorColorNames[APairNumber/5] );
     assert(MinorColorNames[AColorPair->minorColor] == MinorColorNames[APairNumber%5] );
    
