@@ -33,7 +33,7 @@ void PrintAllPairs()
         ColorPairToString(&LColorPair, colorPairNames);
         
         //This function will test each pair againt pair number befor print on console
-        Test_Number_To_ColorPair((LPairNumber-1),&LColorPair);
+        //Test_Number_To_ColorPair((LPairNumber-1),&LColorPair);
         
         printf(" %s",colorPairNames);
     }
